@@ -193,8 +193,8 @@ if (localStorage.getItem("writing") !== null) {
     } else {
         $('#wmd-input').val(localStorage.getItem("writing"+ workspace));
     }
-    document.getElementById("w"+workspace).classList.add("selected-space");
 }
+document.getElementById("w"+workspace).classList.add("selected-space");
     
 openFile = function(e) {
   var file = e.target.files[0];
